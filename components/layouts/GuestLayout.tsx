@@ -5,7 +5,7 @@ interface LayoutProps {
   children: React.ReactNode;
 }
 
-export default function ({ children }: LayoutProps) {
+export default function GuestLayout({ children }: LayoutProps) {
   return (
     <>
       <Head>
