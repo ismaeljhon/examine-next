@@ -1,13 +1,14 @@
 import { ReactElement } from 'react';
+import SignupForm from '../components/forms/SignupForm';
 import GuestLayout from '../components/layouts/GuestLayout';
 import { NextPageWithLayout } from './_app';
 
 const Page: NextPageWithLayout = () => {
-  return <h1 className="text-3xl font-bold underline">Sign up Area</h1>;
+  return <SignupForm />;
 };
 
 Page.getLayout = function getLayout(page: ReactElement) {
-  return <GuestLayout>{page}</GuestLayout>;
+  return <GuestLayout className="signup">{page}</GuestLayout>;
 };
 
 export default Page;
