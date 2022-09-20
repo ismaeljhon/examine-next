@@ -5,7 +5,7 @@ export default function LoginForm() {
   return (
     <div className={styles.loginForm}>
       <h2 className="text-center">Welcome back! 👋</h2>
-      <p className="small text-center">Let's build someting great</p>
+      <p className="small text-center">Let&lsquo;s build someting great</p>
       <Sso />
       <div className="flex items-center py-4">
         <div className="flex-grow h-px bg-light"></div>

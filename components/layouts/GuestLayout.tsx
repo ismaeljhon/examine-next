@@ -3,7 +3,7 @@ import Head from 'next/head';
 
 interface LayoutProps {
   children: React.ReactNode;
-  className: string;
+  className?: string;
 }
 
 export default function GuestLayout(props: LayoutProps) {
