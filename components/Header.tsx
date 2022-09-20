@@ -1,20 +1,23 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import MainNavigation from './MainNavigation';
 import SearchBar from './SearchBar';
 
-export default function Headers() {
+export default function Header() {
   return (
     <header className="flex flex-wrap min-h-0">
       <div className="basis-1/4 p-4 flex">
-        <a href="/" className="flex items-center">
-          <Image
-            className="basis-1/4"
-            src="/logo.png"
-            alt="Examine Logo"
-            width={140}
-            height={30}
-          />
-        </a>
+        <Link href="/" className="flex items-center">
+          <a>
+            <Image
+              className="basis-1/4"
+              src="/logo.png"
+              alt="Examine Logo"
+              width={140}
+              height={30}
+            />
+          </a>
+        </Link>
       </div>
       <div className="searchbar basis-2/4 p-4">
         <SearchBar />
