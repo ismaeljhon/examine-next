@@ -7,11 +7,17 @@ module.exports = {
   theme: {
     colors: {
       'primary': '#5E3B76',
-      'purple-200': '#C9BDD2',
+      purple: {
+        200: '#C9BDD2',
+      }
     },
     backgroundColor: {
       'primary': '#5E3B76',
-      'premium': '#ffd747'
+      'premium': '#ffd747',
+      purple: {
+        200: '#C9BDD2',
+        400: '#826595',
+      }
     },
     extend: {
       fontFamily: {
