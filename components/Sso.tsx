@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { SsoIcons } from '../interfaces/theme/sso.interface';
 import styles from '../styles/Login.module.scss';
 
@@ -13,13 +14,14 @@ export default function Sso() {
       {ssoIcons.map((icon, index) => {
         return (
           <a href="#" key={index} className={styles.ssoIcons}>
-            <img
-              src={icon.src}
-              alt={icon.alt}
-              width={icon.width}
-              height={icon.height}
-              className="mx-auto"
-            />
+            <picture className="mx-auto">
+              <img
+                src={icon.src}
+                alt={icon.alt}
+                width={icon.width}
+                height={icon.height}
+              />
+            </picture>
           </a>
         );
       })}
