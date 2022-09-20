@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: Inter, system-ui, sans-serif;
+    @apply font-normal leading-9;
+  }
+}
+
+header {
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.08);
+  .cta {
+    padding: 10px 20px;
+    border-radius: 57px;
+    @apply font-bold text-base font-inter text-primary bg-premium;
+  }
+}
+
+.searchbar {
+  box-shadow: inset 0px 0px 18px -4px rgba(0, 0, 0, 0.15);
+}
+
+.search-textfield {
+  font-size: 18px;
+  max-width: 415px;
+  @apply block w-full flex-1 rounded-none border-b border-solid border-purple-200 outline-none placeholder:text-primary;
+}
