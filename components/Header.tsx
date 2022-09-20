@@ -2,13 +2,14 @@ import Image from 'next/image';
 import Link from 'next/link';
 import MainNavigation from './MainNavigation';
 import HeaderSearchBar from './HeaderSearchBar';
+import styles from '../styles/Header.module.scss';
 
 export default function Header() {
   return (
     <>
       {/* Header for Large Screen */}
-      <header className="main-header">
-        <div className="basis-1/4 p-4 flex">
+      <header className={styles.mainHeader}>
+        <div className="basis-1/6 p-4 flex">
           <Link href="/">
             <a className="flex items-center">
               <Image
@@ -21,7 +22,7 @@ export default function Header() {
             </a>
           </Link>
         </div>
-        <div className="searchbar basis-2/4 p-4">
+        <div className={styles.searchBar}>
           <HeaderSearchBar />
         </div>
         <div className="basis-1/4 flex items-center p-4">
@@ -45,7 +46,7 @@ export default function Header() {
         </div>
       </header>
       {/* Header for smaller screens */}
-      <header className="mobile-header flex items-center">
+      <header className={styles.mobileHeader}>
         <div className="basis-3/4 flex items-center">
           <a href="#" className="ml-3 p-2 bg-purple-400 rounded">
             <svg

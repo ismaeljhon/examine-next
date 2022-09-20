@@ -1,37 +1,57 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
-  html {
-    @apply font-normal leading-9;
-    font-family: Inter, system-ui, sans-serif;
+  html,
+  body {
+    @apply font-normal leading-9 font-inter;
+
+    p {
+      &.small {
+        font-size: 18px;
+        line-height: 30px;
+      }
+    }
   }
-}
-
-.main-header {
-  @apply hidden lg:flex flex-wrap min-h-0;
-  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.08);
-
-  .cta {
-    @apply font-bold text-base font-inter text-primary bg-premium;
-    padding: 10px 20px;
-    border-radius: 57px;
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-lora text-dark;
   }
-}
+  h2,
+  h3,
+  h4 {
+    @apply font-medium;
+  }
 
-.mobile-header {
-  @apply bg-primary lg:hidden;
-  min-height: 60px;
-}
+  h1 {
+    @apply font-normal text-6xl;
+  }
 
-.searchbar {
-  box-shadow: inset 0px 0px 18px -4px rgba(0, 0, 0, 0.15);
-}
+  h2 {
+    font-size: 40px;
+    line-height: 55px;
+  }
 
-.search-textfield {
-  @apply block w-full flex-1 rounded-none border-b border-solid border-purple-200 outline-none placeholder:text-primary;
-  font-size: 18px;
-  max-width: 415px;
+  h3 {
+    @apply text-3xl;
+  }
+  h4 {
+    font-size: 25px;
+    line-height: 32px;
+  }
+
+  button,
+  .btn,
+  .button {
+    &.large {
+      @apply bg-primary text-white text-xl;
+      line-height: 150%;
+      padding: 8px 16px;
+    }
+  }
 }

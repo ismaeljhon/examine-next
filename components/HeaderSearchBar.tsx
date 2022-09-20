@@ -1,9 +1,10 @@
+import styles from '../styles/Header.module.scss';
 export default function HeaderSearchBar() {
   return (
     <>
       {/* Header search bar for large screen */}
-      <div className="hidden lg:flex">
-        <span className="inline-flex items-center px-3 text-sm">
+      <div className={styles.mainSearchBar}>
+        <span className={styles.searchIcon}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -23,7 +24,7 @@ export default function HeaderSearchBar() {
           type="search"
           name="search"
           id="search"
-          className="search-textfield"
+          className={styles.searchTextfield}
           placeholder="What do you want to learn about?"
         />
       </div>
