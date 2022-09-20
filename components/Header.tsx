@@ -9,8 +9,8 @@ export default function Header() {
       {/* Header for Large Screen */}
       <header className="main-header">
         <div className="basis-1/4 p-4 flex">
-          <Link href="/" className="flex items-center">
-            <a>
+          <Link href="/">
+            <a className="flex items-center">
               <Image
                 className="basis-1/4"
                 src="/logo.png"
