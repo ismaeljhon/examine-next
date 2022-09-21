@@ -17,7 +17,7 @@ export default function FooterLinks({ title, links }: Props) {
         {links.map((link, index) => {
           return (
             <Link href={link.href} key={index}>
-              <a className="text-info block mb-5">{link.label}</a>
+              <a className="text-info block mb-3">{link.label}</a>
             </Link>
           );
         })}
