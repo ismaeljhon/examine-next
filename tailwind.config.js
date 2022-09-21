@@ -16,7 +16,8 @@ module.exports = {
       },
       green: {
         700: '#1B818C'
-      }
+      },
+      'info': '#E2D9F3'
     },
     backgroundColor: {
       'primary': '#5E3B76',
