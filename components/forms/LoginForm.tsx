@@ -33,8 +33,8 @@ export default function LoginForm() {
       </form>
       <button className="large block w-full mt-3">Login</button>
       <div className={pageStyles.cta} onClick={goToSignup}>
-        <h6 className="font-lora">Click here</h6>
-        <p>
+        <h6 className="font-lora text-[22px]">Click here</h6>
+        <p className="leading-[22px] lg:leading-[150%]">
           to sign up for the complete Examine Membership. Includes a free 2 week
           trial!
         </p>
