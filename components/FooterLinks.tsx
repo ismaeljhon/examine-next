@@ -16,8 +16,8 @@ export default function FooterLinks({ title, links }: Props) {
       <nav>
         {links.map((link, index) => {
           return (
-            <p>
-              <Link href={link.href} key={index}>
+            <p key={index}>
+              <Link href={link.href}>
                 <a className="text-info inline-block mb-6">{link.label}</a>
               </Link>
             </p>
