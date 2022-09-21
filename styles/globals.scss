@@ -7,7 +7,10 @@
 @layer base {
   html,
   body {
-    @apply font-normal leading-9 font-inter;
+    @apply font-normal leading-9 font-inter min-h-screen;
+  }
+  main {
+    @apply min-h-[80vh];
   }
   h1,
   h2,
