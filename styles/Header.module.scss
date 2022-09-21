@@ -3,17 +3,14 @@
   box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.08);
 }
 .cta {
-  @apply font-bold text-base font-inter text-primary bg-premium;
-  padding: 10px 20px;
-  border-radius: 57px;
+  @apply font-bold text-base font-inter text-primary bg-premium py-[10px] px-[20px] rounded-[57px];
 }
 .mainNav {
   @apply hidden md:flex md:flex-1 md:items-center md:justify-end md:space-x-4 md:mr-5;
 }
 
 .mobileHeader {
-  @apply bg-primary lg:hidden flex items-center;
-  min-height: 60px;
+  @apply bg-primary lg:hidden flex items-center min-h-[60px];
 }
 
 .searchBar {
@@ -28,7 +25,5 @@
   @apply inline-flex items-center px-3 text-sm;
 }
 .searchTextfield {
-  @apply block w-full flex-1 rounded-none border-b border-solid border-purple-200 outline-none placeholder:text-primary;
-  font-size: 18px;
-  max-width: 415px;
+  @apply block w-full flex-1 rounded-none border-b border-solid border-purple-200 outline-none placeholder:text-primary text-lg max-w-[415px];
 }

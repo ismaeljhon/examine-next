@@ -11,8 +11,7 @@
 
     p {
       &.small {
-        font-size: 18px;
-        line-height: 30px;
+        @apply text-lg leading-[30px];
       }
     }
   }
@@ -34,16 +33,14 @@
   }
 
   h2 {
-    font-size: 40px;
-    line-height: 55px;
+    @apply text-xl lg:text-[40px] lg:leading-[55px];
   }
 
   h3 {
     @apply text-3xl;
   }
   h4 {
-    font-size: 25px;
-    line-height: 32px;
+    @apply text-[25px] leading-8;
   }
   h6 {
     font-size: 18px;
@@ -54,9 +51,7 @@
   .btn,
   .button {
     &.large {
-      @apply bg-primary text-white text-xl;
-      line-height: 150%;
-      padding: 8px 16px;
+      @apply bg-primary text-white text-xl leading-[150%] py-[8px] px-[16px];
     }
   }
 }

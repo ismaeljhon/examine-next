@@ -1,10 +1,7 @@
 .loginForm,
 .signupForm {
-  @apply mx-auto lg:my-16;
+  @apply mx-auto lg:my-16 lg:p-[75px] lg:max-w-[650px] rounded-[30px];
   box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
-  border-radius: 30px;
-  max-width: 650px;
-  padding: 75px;
 }
 
 .input {
@@ -15,18 +12,13 @@
   @apply pr-16;
 }
 .showPass {
-  @apply cursor-pointer uppercase font-bold text-purple-600 absolute top-1 right-3;
-  font-size: 13px;
+  @apply cursor-pointer uppercase font-bold text-purple-600 absolute top-1 right-3 text-[13px];
 }
 
 .ssoIcons {
-  @apply flex items-center mx-1.5 text-center;
-  width: 68px;
-  height: 54px;
-  background: #ffffff;
+  @apply flex items-center mx-1.5 text-center lg:w-[68px] lg:h-[54px] bg-white rounded-xl;
   box-shadow: 0px 0px 1px rgba(12, 26, 75, 0.2),
     0px 1px 3px rgba(50, 50, 71, 0.1);
-  border-radius: 12px;
 
   span {
     @apply flex;
