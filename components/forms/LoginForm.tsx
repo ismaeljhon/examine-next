@@ -16,9 +16,7 @@ export default function LoginForm() {
       <Sso />
       <div className="flex items-center py-4">
         <div className="flex-grow h-px bg-light"></div>
-        <span className="flex-shrink uppercase font-normal text-center w-16 text-secondary">
-          Or
-        </span>
+        <span className={layoutStyles.formBreakline}>Or</span>
         <div className="flex-grow h-px bg-light"></div>
       </div>
       <form className="">
@@ -31,7 +29,7 @@ export default function LoginForm() {
         />
         <PasswordField className={layoutStyles.input} />
       </form>
-      <button className="large block w-full">Login</button>
+      <button className="large block w-full mt-3">Login</button>
       <div className={pageStyles.cta} onClick={goToSignup}>
         <h6 className="font-lora">Click here</h6>
         <p>

@@ -8,12 +8,6 @@
   html,
   body {
     @apply font-normal leading-9 font-inter;
-
-    p {
-      &.small {
-        @apply text-lg leading-[30px];
-      }
-    }
   }
   h1,
   h2,
@@ -43,15 +37,14 @@
     @apply text-[25px] leading-8;
   }
   h6 {
-    font-size: 18px;
-    line-height: 150%;
+    @apply text-lg leading-[150%];
   }
 
   button,
   .btn,
   .button {
     &.large {
-      @apply bg-primary text-white text-xl leading-[150%] py-[8px] px-[16px];
+      @apply bg-primary text-white leading-[150%] mt-8 py-[6px] px-3 text-base rounded-[4px] lg:text-xl h-[35px] lg:h-[60px] lg:py-[8px] lg:px-[16px];
     }
   }
 }

@@ -1,7 +1,10 @@
 .loginForm,
 .signupForm {
-  @apply mx-auto lg:my-16 lg:p-[75px] lg:max-w-[650px] rounded-[30px];
-  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
+  @apply mx-auto my-10 px-5 lg:my-16 lg:p-[75px] lg:max-w-[650px] lg:rounded-[30px] lg:shadow-guest-form;
+}
+
+.subHeading {
+  @apply text-center text-sm text-secondary mt-3 lg:text-lg;
 }
 
 .input {
@@ -16,9 +19,7 @@
 }
 
 .ssoIcons {
-  @apply flex items-center mx-1.5 text-center lg:w-[68px] lg:h-[54px] bg-white rounded-xl;
-  box-shadow: 0px 0px 1px rgba(12, 26, 75, 0.2),
-    0px 1px 3px rgba(50, 50, 71, 0.1);
+  @apply flex items-center mx-1.5 text-center bg-white rounded-[3px] shadow-[0_0_1px_rgba(12,26,75,0.2),0_1px_3px_rgba(50,50,71,0.1)] w-[36px] h-[28px] lg:rounded-xl lg:w-[68px] lg:h-[54px];
 
   span {
     @apply flex;
@@ -26,5 +27,5 @@
 }
 
 .formBreakline {
-  @apply uppercase;
+  @apply flex-shrink uppercase font-normal text-center w-16 text-secondary text-sm;
 }

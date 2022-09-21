@@ -6,15 +6,13 @@ export default function SignupForm() {
   return (
     <div className={layoutStyles.signupForm}>
       <h2 className="text-center">Create your account</h2>
-      <p className="small text-center">
+      <p className={layoutStyles.subHeading}>
         It&lsquo;s Includes a free 2 week trial!
       </p>
       <Sso />
       <div className="flex items-center py-4">
         <div className="flex-grow h-px bg-light"></div>
-        <span className="flex-shrink uppercase font-normal text-center w-16 text-secondary">
-          Or
-        </span>
+        <span className={layoutStyles.formBreakline}>Or</span>
         <div className="flex-grow h-px bg-light"></div>
       </div>
       <form className="">

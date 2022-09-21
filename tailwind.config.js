@@ -44,6 +44,9 @@ module.exports = {
         'inter': ['Inter', 'cursive'],
         'lora': ['Lora'],
       },
+      boxShadow: {
+        'guest-form': '0px 2px 12px rgba(0, 0, 0, 0.08)',
+      }
     },
   },
   plugins: [],
