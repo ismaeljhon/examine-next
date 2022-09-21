@@ -4,7 +4,7 @@
 }
 
 .subHeading {
-  @apply text-center text-sm text-secondary mt-3 lg:text-lg;
+  @apply text-center text-sm text-secondary mt-2 lg:text-lg;
 }
 
 .input {
@@ -25,7 +25,9 @@
     @apply flex;
   }
 }
-
 .formBreakline {
+  @apply flex items-center my-7;
+}
+.formBreaklineText {
   @apply flex-shrink uppercase font-normal text-center w-16 text-secondary text-sm;
 }

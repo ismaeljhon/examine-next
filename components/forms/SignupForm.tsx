@@ -10,9 +10,9 @@ export default function SignupForm() {
         It&lsquo;s Includes a free 2 week trial!
       </p>
       <Sso />
-      <div className="flex items-center py-4">
+      <div className={layoutStyles.formBreakline}>
         <div className="flex-grow h-px bg-light"></div>
-        <span className={layoutStyles.formBreakline}>Or</span>
+        <span className={layoutStyles.formBreaklineText}>Or</span>
         <div className="flex-grow h-px bg-light"></div>
       </div>
       <form className="">
