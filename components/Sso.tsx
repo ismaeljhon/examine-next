@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { SsoIcons } from '../interfaces/theme/sso.interface';
-import styles from '../styles/Login.module.scss';
+import styles from '../styles/GuestLayout.module.scss';
 
 const ssoIcons: SsoIcons[] = [
   { src: '/gplus.png', width: 25, height: 24 },

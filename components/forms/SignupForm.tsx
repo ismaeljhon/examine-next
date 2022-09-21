@@ -1,9 +1,10 @@
 import Sso from '../Sso';
-import styles from '../../styles/Signup.module.scss';
+import layoutStyles from '../../styles/GuestLayout.module.scss';
+import PasswordField from '../PasswordField';
 
 export default function SignupForm() {
   return (
-    <div className={styles.signupForm}>
+    <div className={layoutStyles.signupForm}>
       <h2 className="text-center">Create your account</h2>
       <p className="small text-center">
         It&lsquo;s Includes a free 2 week trial!
@@ -22,17 +23,18 @@ export default function SignupForm() {
           name="fullname"
           id="fullname"
           placeholder="Full Name"
+          className={layoutStyles.input}
         />
-        <input type="email" name="email" id="email" placeholder="Email" />
-        <div className="relative">
-          <input
-            type="password"
-            name="password"
-            id="password"
-            placeholder="Password"
-          />
-          <span className={styles.showPass}>show</span>
-        </div>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Email"
+          className={layoutStyles.input}
+        />
+        <PasswordField
+          className={`${layoutStyles.input} ${layoutStyles.password}`}
+        />
       </form>
       <button className="large block w-full">
         Start your 2-week free trial!

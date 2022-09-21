@@ -1,21 +1,19 @@
+.loginForm,
 .signupForm {
-  @apply mx-auto lg:mt-16;
+  @apply mx-auto lg:my-16;
   box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
   border-radius: 30px;
   max-width: 650px;
   padding: 75px;
-
-  input[type='text'],
-  input[type='email'],
-  input[type='password'] {
-    @apply block w-full border border-gray-400 pl-3 rounded text-secondary placeholder:text-secondary mb-6 h-11;
-  }
-
-  input[type='password'] {
-    @apply pr-16;
-  }
 }
 
+.input {
+  @apply block w-full border border-gray-400 pl-3 rounded text-secondary placeholder:text-secondary mb-6 h-11;
+}
+
+.password {
+  @apply pr-16;
+}
 .showPass {
   @apply cursor-pointer uppercase font-bold text-purple-600 absolute top-1 right-3;
   font-size: 13px;

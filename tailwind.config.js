@@ -13,7 +13,10 @@ module.exports = {
         600: '#562E69'
       },
       'dark': '#212529',
-      'white': '#ffffff'
+      'white': '#ffffff',
+      green: {
+        700: '#1B818C'
+      }
     },
     backgroundColor: {
       'primary': '#5E3B76',
@@ -25,6 +28,7 @@ module.exports = {
       light: '#EDF2F7'
     },
     borderColor: {
+      secondary: '#25A1AF',
       purple: {
         200: '#C9BDD2',
         400: '#826595',
