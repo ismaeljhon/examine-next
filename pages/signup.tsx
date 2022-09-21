@@ -1,6 +1,6 @@
 import { ReactElement } from 'react';
 import SignupForm from '../components/forms/SignupForm';
-import GuestLayout from '../components/layouts/GuestLayout';
+import MainLayout from '../components/layouts/MainLayout';
 import { NextPageWithLayout } from './_app';
 
 const Page: NextPageWithLayout = () => {
@@ -8,7 +8,7 @@ const Page: NextPageWithLayout = () => {
 };
 
 Page.getLayout = function getLayout(page: ReactElement) {
-  return <GuestLayout className="signup">{page}</GuestLayout>;
+  return <MainLayout className="signup">{page}</MainLayout>;
 };
 
 export default Page;

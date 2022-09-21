@@ -4,9 +4,10 @@ import Head from 'next/head';
 
 interface LayoutProps {
   children: React.ReactNode;
+  className?: string;
 }
 
-export default function MainLayout({ children }: LayoutProps) {
+export default function MainLayout({ children, className = '' }: LayoutProps) {
   return (
     <>
       <Head>
@@ -15,7 +16,7 @@ export default function MainLayout({ children }: LayoutProps) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <main>{children}</main>
+      <main className={className}>{children}</main>
       <Footer />
     </>
   );
