@@ -6,7 +6,7 @@ import FooterLinks from './FooterLinks';
 export default function Footer() {
   return (
     <footer className="bg-primary pt-[85px]">
-      <article className="max-w-[1225px] mx-auto grid px-10 lg:px-0 lg:grid-cols-[45%_repeat(2,22%)_10%] lg:grid-flow-col border-b border-b-[rgba(0,0,0,0.11)] pb-8">
+      <article className="max-w-[1225px] mx-auto grid px-5 lg:px-0 lg:grid-cols-[45%_repeat(2,22%)_10%] lg:grid-flow-col border-b border-b-[rgba(0,0,0,0.11)] pb-8">
         <aside>
           <Link href="/">
             <a className="flex items-center">

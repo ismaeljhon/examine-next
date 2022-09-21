@@ -30,8 +30,9 @@ module.exports = {
       },
     },
     borderColor: {
-      secondary: '#25A1AF',
-      light: '#EDF2F7',
+      'secondary': '#25A1AF',
+      'info': '#E2D9F3',
+      'light': '#EDF2F7',
       purple: {
         200: '#C9BDD2',
         400: '#826595',
